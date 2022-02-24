@@ -2,15 +2,11 @@
 framework: jest
 preRun:
   command:
-    - yarn install
+    - yarn
 preMerge:
-  env:
-    NODE_ENV: test
   pattern:
     - "app/javascript/mastodon/features/emoji/__tests__/emoji_index-test.js"
 postMerge:
-  env:
-    NODE_ENV: test
   pattern:
     - "app/javascript/mastodon/features/emoji/__tests__/emoji_index-test.js"
 postRun:
